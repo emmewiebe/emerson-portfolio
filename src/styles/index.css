@@ -1,0 +1,20 @@
+/* External libraries */
+@import "swiper/css/bundle";
+@import "react-18-image-lightbox/src/style.css";
+@import "react-modal-video/css/modal-video.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Internal CSS from src/assets/css */
+@import "../assets/css/animate.min.css";
+@import "../assets/css/blog.css";
+@import "../assets/css/font-awesome-pro.css";
+@import "../assets/css/mobilemenu.css";
+@import "../assets/css/spacing.css";
+@import "../assets/css/style.css";
+@import "../assets/css/responsive.css";
+
+/* Fonts */
+@import "../assets/fonts/remixicon.css";
+
+/* ⚠️ Duplicate: REMOVE this one (already using npm bootstrap above) */
+@import "../assets/css/bootstrap.min.css"; /* ❌ Remove this line */
