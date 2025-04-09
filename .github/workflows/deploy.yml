@@ -26,9 +26,9 @@ jobs:
 
       - name: Deploy to HostPapa via FTP
         uses: sebastianpopp/ftp-action@v1.0.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist
-          remote-dir: /public_html  # Specify the correct folder on your HostPapa account
+      with:
+  host: ${{ secrets.FTP_SERVER }}
+  user: ${{ secrets.FTP_USERNAME }}
+  password: ${{ secrets.FTP_PASSWORD }}
+  localDir: ./dist
+  remoteDir: /public_html
