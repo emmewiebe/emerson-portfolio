@@ -52,7 +52,7 @@ export default function HeroArea() {
             <div className="col-lg-12">
               <div className="hero-content wow fadeInUp text-center delay-0-2s">
                 <h2 style={{ fontSize: '10rem' }}>
-                  Emerson Drew
+                  Emerson Drew!!!!
                 </h2>
               </div>
             </div>
