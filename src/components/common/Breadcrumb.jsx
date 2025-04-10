@@ -11,7 +11,7 @@ export default function Breadcrumb({ title, style_2, style_3, style_4, customDes
 
             {!customDescription && style_2 && (
               <p>
-                A Collection of My Latest Works and Achievements: Discover the Projects that Define My Passion and Skills
+                A Collection of EMMES Latest Works and Achievements: Discover the Projects that Define My Passion and Skills
               </p>
             )}
             {!customDescription && style_3 && (
