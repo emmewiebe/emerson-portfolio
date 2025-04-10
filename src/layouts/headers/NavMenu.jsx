@@ -16,7 +16,7 @@ export default function NavMenu() {
                   <li key={index}>
                     <Link to={sub_menu.link}>
                       {sub_menu.title}
-                    </Link>
+                       </Link>
                   </li>
                 ))}
               </ul>
