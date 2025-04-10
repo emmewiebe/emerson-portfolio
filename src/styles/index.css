@@ -6,7 +6,6 @@
 
 /* Internal CSS from src/assets/css */
 @import "../assets/css/animate.min.css";
-@import "../assets/css/blog.css";
 @import "../assets/css/font-awesome-pro.css";
 @import "../assets/css/mobilemenu.css";
 @import "../assets/css/spacing.css";
@@ -16,5 +15,5 @@
 /* Fonts */
 @import "../assets/fonts/remixicon.css";
 
-/* ⚠️ Duplicate: REMOVE this one (already using npm bootstrap above) */
-@import "../assets/css/bootstrap.min.css"; /* ❌ Remove this line */
+
+@import "../assets/css/bootstrap.min.css"; 

@@ -199,7 +199,6 @@ img {
 mark {
     color: var(--primary-color);
     background: transparent;
-    text-decoration: underline;
 }
 
 
@@ -823,7 +822,6 @@ html {
   
   .connect-link:hover {
     color: #79b4af; 
-    text-decoration: underline;
   }
   
 .header-area {
@@ -896,6 +894,10 @@ html {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
+
+a {
+    text-decoration: none;
+  }
 
 .main-menu ul li .sub-menu li.has-dropdown>a:after {
     right: 15px;
@@ -1012,9 +1014,16 @@ html {
     font-size: 18px;
     position: relative;
     white-space: nowrap;
+    text-decoration: none; /* remove underline */
+    color: var(--main-color); /* optional: reinforce your link color */
 }
 
-.linkstyle:before {
+.linkstyle a {
+    text-decoration: none; /* extra safeguard for anchor tag */
+    color: inherit;
+}
+
+.linkstyle::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -1023,23 +1032,16 @@ html {
     top: 100%;
     left: 0;
     pointer-events: none;
-    -webkit-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
-    -webkit-transform: scale3d(0, 1, 1);
-    transform: scale3d(0, 1, 1);
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
-
-.linkstyle:hover:before {
-    -webkit-transform-origin: 0% 50%;
+.linkstyle:hover::before {
     transform-origin: 0% 50%;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    transform: scaleX(1);
 }
+
 
 /*----------------------------------------*/
 /*  MEAN MENU CSS START
@@ -1271,7 +1273,7 @@ html {
 
 .hero-content .hero-btns .read-more {
     margin-top: 15px;
-    text-decoration: underline;
+  
 }
 
 .author-image-part {

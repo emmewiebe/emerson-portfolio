@@ -14,11 +14,8 @@ const menu_data = [
 	{
 	  id: 3,
 	  title: "Projects",
-	  link: "#",
-	  has_dropdown: true,
-	  sub_menus: [
-		{ link: "/projects", title: "Projects List" },
-	  ],
+	  link: "/projects",
+	  has_dropdown: false, // No dropdown anymore
 	},
 	{
 	  id: 4,

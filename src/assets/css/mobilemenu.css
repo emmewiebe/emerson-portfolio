@@ -1,12 +1,5 @@
 
-/*! #######################################################################
 
-	MeanMenu 2.0.7
-	--------
-
-	To be used with jquery.meanmenu.js by Chris Wharton (http://www.meanthemes.com/plugins/meanmenu/)
-
-####################################################################### */
 
 /* hide the link until viewport size is reached */
 a.meanmenu-reveal {
@@ -143,7 +136,6 @@ a.meanmenu-reveal {
 	margin: 0;
 }
 
-/* Fix for box sizing on Foundation Framework etc. */
 .mean-container .mean-bar, .mean-container .mean-bar * {
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
